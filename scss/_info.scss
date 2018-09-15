@@ -1,0 +1,71 @@
+
+.info{
+  &__list{
+
+  }
+  &__item{
+    position:relative;
+
+    color:$base-font-color;
+
+    border:solid 1px $light-gray;
+    border-width:0px 0px 1px;
+    &:last-child{
+      border-width:0px;
+    }
+
+    &--fixed{
+      @extend .info__item;
+      border:solid 5px $rihatsu-momo;
+    }
+  }
+
+  &__link{
+    display:block;
+
+    color:$base-font-color;
+
+    &:hover{
+      color:$base-font-color;
+      text-decoration:none;
+      background:$rihatsu-usucha;
+    }
+  }
+
+  &__latestIcon{
+    display:block;
+    position:absolute;
+      top:0px;
+      left:0px;
+  }
+
+  &__header{
+    @include outer-container;
+    padding:$small-spacing $card_padding_side;
+  }
+    &__title{
+      @include span-columns(3 of 4);
+
+      margin-bottom:0;
+      &--new{
+        @extend .info__title;
+        text-indent:50px;
+      }
+    }
+    &__publishDate{
+
+      display:block;
+      @include span-columns(1 of 4);
+      @include omega;
+      text-align:right;
+      
+    }
+
+  &__content{
+    padding: 0 $small-spacing $card_padding_side;
+    margin:0;
+
+  }
+
+}
+

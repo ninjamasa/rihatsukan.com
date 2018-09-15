@@ -1,0 +1,58 @@
+.document
+{
+  background:$rihatsu-usucha;
+  &--bg{
+    &-blog{
+    }
+  }
+}
+
+.document
+{
+  &__header{
+    background:url(./images/bg_normal.jpg);
+    background-size:cover;
+    &--bg-blog{
+
+    }
+  }
+  &__inner{
+    @include outer-container;
+
+    &--width-blog{
+      @include outer-container(960px);
+    }
+  }
+
+  &__content {
+    padding-top:$base-spacing;
+
+    &--blog{
+      @extend .document__content;
+      padding-top:0;
+      margin-top: -$base-spacing*2;
+    }
+    &--frontPage{
+      @extend .document__content;
+      padding-top:0;
+      margin-top: 0;
+    }
+  }
+  &__footer{
+    background:$rihatsu-hada;
+
+    &--blog{
+      @extend .document__footer;
+      background:$rihatsu-skyblue;
+
+
+    }
+
+  }
+  
+  &--bg-blog{
+    background:url("./images/bg_blog.png") repeat-y;
+    background-size:contain;
+
+  }
+}

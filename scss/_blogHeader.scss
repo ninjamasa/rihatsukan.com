@@ -1,0 +1,73 @@
+
+.blogHeader{
+
+  background:url(./images/blog_header_bg.jpg) no-repeat;
+  background-position:0 -50px;
+  background-size:cover;
+
+  padding-top:$base-spacing;
+  padding-bottom:$base-spacing * 3;
+
+
+  &__logo{
+    @include span-columns(4);
+
+    text-align:center;
+
+  }
+
+  &__goHome{
+
+    @include span-columns(2);
+    @include shift(2);
+
+    text-align:right;
+    &Button{
+        border-radius:$base-border-radius;
+        text-align:center;
+        display:inline-block;
+        padding:$base-spacing;
+        background:rgba(255,255,255,0.9);
+        font-size:$base-font-size;
+        line-height:$base-line-height;
+        text-decoration:none;
+        color:$dark-gray;
+        &:hover{
+          opacity:0.8;
+        }
+    }
+
+    @include media($medium-screen-up){
+      &Button{
+
+        margin-right:$base-spacing;
+      }
+
+    }
+
+
+  }
+
+  &__space{
+    @include span-columns(4);
+    height:$base-spacing*3;
+  }
+
+}
+
+@include media($medium-screen-up){
+  .blogHeader{
+    &__logo{
+      @include span-columns(2);
+      @include shift(1);
+    }
+
+    &__goHome{
+      @include span-columns(1);
+      @include shift(0);
+      @include omega;
+
+    }
+  }
+}
+

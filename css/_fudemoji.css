@@ -1,0 +1,18 @@
+.fudemoji {
+  display: inline-block;
+  position: relative;
+}
+
+.fudemoji__title {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.fudemoji__container {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 15%;
+  right: 15%;
+}

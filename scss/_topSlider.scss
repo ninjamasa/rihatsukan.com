@@ -1,0 +1,36 @@
+.topSlider{
+  &__item{
+    text-align:center;
+
+  }
+
+  &__link{
+    display:block;
+    margin:0 auto;
+    position:relative;
+
+    img{
+      margin:0 auto;
+    }
+  }
+
+  &__mainImage{
+    width:100%;
+
+  }
+
+  &__yumeAriDesc{
+    position:absolute;
+      top:$base-spacing;
+      bottom:$base-spacing;
+      left:$base-spacing;
+      right:55%;
+
+
+    text-align:left;
+    color:$dark_gray;
+    text-decoration:none;
+
+  }
+}
+

@@ -1,0 +1,373 @@
+@import "bootstrap.less";
+
+
+body{
+  font-family:"游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ' , Meiryo , Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+#branding{
+	background: url(../img/header_back_picture.png) repeat-x 50% 26px;
+
+	#topbar{
+		background: url(../img/topbar_back.png) repeat-x;
+		height:26px;
+	}
+
+	.container{
+
+		overflow: hidden;
+		position: relative;
+
+		#phonenumber{
+			float:left;
+		}
+
+		#image-photo{
+			position: absolute;
+			top:30px;
+			right: 30px;
+			font-size:30px;
+		}
+	}
+	
+	.navbar{
+		margin-bottom:0;
+	}
+}
+
+#rihatsu-feacher{
+	margin-bottom:2em;
+}
+
+.fuchidori{
+	filter:dropshadow(color=#000000,offX= 0,offY=-1)
+	dropshadow(color=#000000,offX= 1,offY= 0)
+	dropshadow(color=#000000,offX= 0,offY= 1)
+	dropshadow(color=#000000,offX=-1,offY= 0);
+
+	-webkit-text-stroke-color: #000;
+	-webkit-text-stroke-width: 1px;
+
+	text-shadow: black 1px 1px 0px, black -1px 1px 0px,
+  black 1px -1px 0px, black -1px -1px 0px;
+
+}
+
+.basic-info{
+  //	.fuchidori;
+  padding: @jumbotron-padding;
+  margin: @jumbotron-padding 0;
+  color: @gray-lighter;
+
+  font-size:@font-size-large;
+  font-weight:bold;
+
+  .container & {
+    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding-top:    (@jumbotron-padding * 1.6);
+    padding-bottom: (@jumbotron-padding * 1.6);
+  }
+
+  @media screen and (max-width: @screen-md-min) {
+   background-color: rgba(0,0,0,0.7); 
+ }
+
+
+ a, a:hover{
+   color: @gray-lighter;
+
+  }
+}
+
+
+//navbar-rihatsukan       ... see navbar.less
+
+.navbar-rihatsukan {
+  background-color: @rihatsu-kogecha;
+  border-color: @navbar-inverse-border;
+
+  .navbar-brand {
+    color: @gray-lighter;
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+      background-color: @navbar-inverse-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @gray-lighter;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @gray-lighter;
+
+      &:hover,
+      &:focus {
+        color: @gray-lighter;
+        background-color: @rihatsu-cha;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @gray-lighter;
+        background-color: @navbar-inverse-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @gray-lighter;
+        background-color: @navbar-inverse-link-disabled-bg;
+      }
+    }
+  }
+
+  // Darken the responsive nav toggle
+  .navbar-toggle {
+    border-color: @rihatsu-cha;
+    color:@gray-lighter;
+    &:hover,
+    &:focus {
+      background-color: @rihatsu-cha;
+    }
+    .icon-bar {
+      background-color: @rihatsu-cha;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken(@navbar-inverse-bg, 7%);
+  }
+
+  // Dropdowns
+  .navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-inverse-link-active-bg;
+        color: @gray-lighter;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display
+      .open .dropdown-menu {
+        > .dropdown-header {
+          border-color: @navbar-inverse-border;
+        }
+        .divider {
+          background-color: @navbar-inverse-border;
+        }
+        > li > a {
+          color: @gray-lighter;
+          &:hover,
+          &:focus {
+            color: @gray-lighter;
+            background-color: @navbar-inverse-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @gray-lighter;
+            background-color: @navbar-inverse-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @gray-lighter;
+            background-color: @navbar-inverse-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-link {
+    color: @gray-lighter;
+    &:hover {
+      color: @gray-lighter;
+    }
+  }
+
+  .btn-link {
+    color: @gray-lighter;
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: @gray-lighter;
+      }
+    }
+  }
+}
+
+
+
+////////////////riihatsucard  see jumbotron.less/////////////////
+
+.rihatsucard {
+  padding: @jumbotron-padding;
+  margin-bottom: @jumbotron-padding;
+  color: @jumbotron-color;
+  //background-color: @jumbotron-bg;
+  background-color: @rihatsu-usucha;
+
+  h2, 
+  .h2 {
+    color: @font-size-base;
+    margin-top:0;
+
+
+  }
+
+  p {
+    margin-bottom: (@jumbotron-padding / 2);
+    font-size: 
+    @font-size-base;
+    font-weight: 200;
+  }
+
+  > hr {
+    border-top-color: darken(@jumbotron-bg, 10%);
+  }
+
+  .container & {
+  border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding-top:    (@jumbotron-padding * 1.6);
+    padding-bottom: (@jumbotron-padding * 1.6);
+
+    .container & {
+      padding-left:  (@jumbotron-padding * 2);
+      padding-right: (@jumbotron-padding * 2);
+    }
+  }
+}
+
+
+
+//////////////////////カレンダー////////////////////////
+.cal_wrapper {
+  max-width: 800px; /* 最大幅 */
+  min-width: 100px; /* 最小幅 */
+  margin: 2.0833% auto;
+}
+ 
+.googlecal {
+  position: relative;
+  padding-bottom: 65%; /* 縦横比 小さいスクリーンのときはカードが一列なので縦をつぶす*/
+  height: 0;
+  overflow: hidden;
+
+
+  @media (min-width: @screen-md-min) {
+    padding-bottom: 100%; /* 縦横比 ある程度大きければ1x1*/
+  }
+
+}
+
+.googlecal iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+ 
+
+//Google Map用
+.ggmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmapr object,
+.ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+////////////////////////////////basic styles///////////////////////////////////
+.basic-padding{
+	padding:@padding-large-vertical @padding-large-horizontal;
+}
+
+.simple-back{
+	background: @rihatsu-usucha;
+}
+
+
+.margin-bottom{
+	margin-bottom:2em;
+}
+
+.fbback a{
+  display: block;
+  padding: @padding-base-vertical*3 @padding-base-horizontal;
+
+  background: #3b5998;
+  color:@gray-lighter;
+
+  font-size:@font-size-large;
+
+}
+
+
+
+/////////////エディタ用基本スタイル///////////////////
+
+
+.aligncenter,
+dl.aligncenter,
+.html5-captions .wp-caption.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}

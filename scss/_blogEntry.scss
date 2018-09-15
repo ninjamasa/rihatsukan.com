@@ -1,0 +1,47 @@
+
+.blogEntry{
+
+  background:url("./images/card_blog_bg.png") no-repeat bottom left white;
+
+
+  &__title{
+    
+    margin-bottom:0;
+  }
+
+  &__separator{
+    margin-top:-10px;
+    background:url("./images/blog_title_bg.png") no-repeat bottom left;
+    height:30px;
+    background-size:contain;
+    border:0;
+
+  }
+
+  &__timeBox{
+    background:red;
+    position:relative;
+
+  }
+
+  &__time{
+    position:absolute;
+    right:0;
+    &--float{
+      float:right;
+      padding-left:1em;
+    }
+  }
+
+  &__content{
+
+
+  }
+
+  &__footer{
+    border-top:solid 1px $light-gray;
+    padding-top:$small-spacing;
+
+    text-align:right;
+  }
+}

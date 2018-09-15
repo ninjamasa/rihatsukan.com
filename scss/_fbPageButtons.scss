@@ -1,0 +1,40 @@
+
+.fbPageButtons{
+
+  table-layout:fixed;
+  &__bannerCell{
+    vertical-align:top;
+    padding-right:$small-spacing/2;
+
+    &:last-child{
+      padding-right:0;
+    }
+
+    
+  }
+  &__likeCell{
+    text-align:center;
+  }
+
+  &_item {
+    background: $fb-color;
+    padding:1rem;
+    &:hover{
+      opacity:0.8;
+    }
+  }
+  &_icon{
+    display:block;
+    width:100%;
+    height:auto; 
+    background:blue;
+  }
+  &_title{
+    margin:0;
+    margin-top:$small-spacing;
+    text-align:center;
+    color: white;
+
+  }
+}
+

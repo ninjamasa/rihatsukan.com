@@ -1,0 +1,10 @@
+.adminBarPageId{
+  color:white;
+  &:hover{
+    text-decoration:none;
+  }
+  
+  &__textbox{
+    display:inline;
+  }
+}

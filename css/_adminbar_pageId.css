@@ -1,0 +1,11 @@
+.adminBarPageId {
+  color: white;
+}
+
+.adminBarPageId:hover {
+  text-decoration: none;
+}
+
+.adminBarPageId__textbox {
+  display: inline;
+}

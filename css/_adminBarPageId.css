@@ -1,0 +1,17 @@
+#wpadminbar .adminBarPageId {
+  color: white;
+}
+
+#wpadminbar .adminBarPageId:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#wpadminbar .adminBarPageId__textbox {
+  background: red;
+  display: inline;
+  width: auto;
+  padding: 3px;
+  color: black;
+  text-align: center;
+}

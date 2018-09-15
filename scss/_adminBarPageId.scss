@@ -1,0 +1,22 @@
+#wpadminbar{ //詳細度対策
+  .adminBarPageId{
+    color:white;
+
+
+    &:hover{
+      color:white;
+      text-decoration:none;
+    }
+
+    &__textbox{
+      border:solid 1px $light-gray;
+      border-radius:$base-border-radius;
+      
+      padding:3px;
+
+      color:black;
+      background:white;
+
+    }
+  }
+}

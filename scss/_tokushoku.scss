@@ -1,0 +1,34 @@
+.tokushoku{
+	background:white;
+
+	&__container{
+		@include outer-container();
+
+		margin-bottom:$base-spacing;
+
+	}
+
+	&__box{
+
+		@include media($medium-screen-up){
+
+	      @include span-columns(5 of 6);
+	      @include shift(1);
+
+		}
+
+
+		background:no-repeat right bottom url('./images/bg_opacity.jpg');
+		background-size:contain;
+	}
+
+	&__content{
+		text-shadow: white 0px 0px 3px, white 0px 0px 3px, white 0px 0px 3px,white 0px 0px 3px;
+		font-weight:bold;
+
+		padding:$small-spacing $small-spacing $base-spacing;
+
+
+
+	}
+}

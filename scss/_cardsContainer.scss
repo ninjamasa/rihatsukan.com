@@ -1,0 +1,28 @@
+
+.cardsContainer{
+  @include outer-container;
+  &__vertical{
+    @include span-columns(4);
+
+    @include media($medium-screen-up){
+      @include span-columns(2);
+    }
+
+    &--main{
+      @extend .cardsContainer__vertical;
+
+      @include span-columns(4);
+      @include media($medium-screen-up){
+        @include span-columns(3);
+      }
+    }
+    &--side{
+      @extend .cardsContainer__vertical;
+
+      @include span-columns(4);
+      @include media($medium-screen-up){
+        @include span-columns(1);
+      }
+    }
+  }
+}

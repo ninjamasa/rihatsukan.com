@@ -1,0 +1,173 @@
+
+.card{
+  @include span-columns(4); //スマホ時はフルサイズ
+}
+
+
+
+.card{
+
+  &__inner{
+    padding:$card-padding-top $card-padding-side $card-padding-bottom;
+
+    @include media($medium-screen-down){
+      margin:0.3rem;
+      margin-bottom:1.4rem;
+    }
+
+    margin-bottom:1.4rem;
+
+    background-color:white;
+    background-image:url("./images/card_bg.png");
+    background-repeat:no-repeat;
+    background-position:10% 90%;
+
+    border-radius:5px;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.5);
+
+
+  }
+  &__title{
+    text-align:center;
+    &--sidebar{
+      @extend .card__title;
+      @extend .h3;
+    }
+  }
+  &__content{
+    &--margin-zero{
+      margin-left: -$card-padding-side;
+      margin-right: -$card-padding-side;
+
+    }
+  }
+}
+
+.card{
+
+  &--info{
+    .card__inner{
+      background-image:url("./images/card_bg_info.png");
+      background-position:90% 90%;
+    }
+  }
+  &--blog{
+    .card__inner{
+      background:url("./images/card_bg_blog.jpg") white;
+      background-size:contain;
+      background-repeat:no-repeat;
+    }
+  }
+
+  &--sidebar{
+    .card__inner{
+      background:white;
+    }
+  }
+}
+
+.card{
+
+  &--sidebar{
+    @extend .card;
+  }
+
+  &--tokushoku{
+    @extend .card;
+  }
+
+  &--info{
+    @extend .card;
+  }
+
+  &--calendar{
+    @extend .card;
+  }
+  &--access{
+    @extend .card;
+  }
+
+  &--menu{
+    @extend .card;
+  }
+  &--staff{
+    @extend .card;
+  }
+  &--blog{
+    @extend .card;
+
+    &--sidebar{
+      @extend .card--blog;
+    }
+  }
+
+  &--facebook{
+    @extend .card;
+  }
+
+  &--yumeAri{
+    @extend .card;
+  }
+
+  &--subMain{
+    @extend .card;
+  }
+}
+
+
+
+
+@include media($medium-screen-up){
+.card{
+    &--info{
+      @include span-columns(2);
+    }
+
+
+    &--calendar{
+      @include span-columns(2);
+    }
+    &--access{
+      @include span-columns(2);
+    }
+
+    &--menu{
+      @include span-columns(2);
+    }
+    &--staff{
+      @include span-columns(2 of 2);
+    }
+    &--blog{
+      @include span-columns(2 of 2);
+    }
+    &--facebook{
+      @include span-columns(2 of 2);
+    }
+
+    &--yumeAri{
+      @include span-columns(2 of 2);
+    }
+
+    &--subMain{
+      @include span-columns(3);
+    }
+  }
+}
+
+  
+@include media($large-screen-up){
+  .card{
+    &--info{
+      @include span-columns(5);
+    }
+
+    &--calendar{
+      @include span-columns(3);
+    }
+
+    &--tokushoku{
+    }
+  }
+}
+
+

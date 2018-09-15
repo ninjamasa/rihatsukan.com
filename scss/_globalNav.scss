@@ -1,0 +1,30 @@
+
+.globalNav{
+  background:$rihatsu-kogecha;
+  padding:0;
+
+  &__list{
+    overflow:hidden; //clearfix
+  }
+
+  &__item{
+    display:inline-block;
+    max-width:25%;
+    vertical-align:middle;
+
+    a{
+      display:block;
+    }
+
+    a:hover {
+      background:$rihatsu-cha;
+    }
+
+  }
+
+  @include media($medium-screen-up){
+    padding:0 $small-spacing;
+  }
+}
+
+

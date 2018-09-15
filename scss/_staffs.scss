@@ -1,0 +1,38 @@
+
+
+.staffs{
+  &__title{
+  }
+
+  &__item{
+    @include outer-container;
+
+    border-bottom:solid 1px $light-gray;
+    margin-bottom:$base-spacing;
+  }
+
+  &__icon{
+    @include span-columns(2);
+    @include shift(1);
+    
+    img{
+      height:auto !important;
+
+    }
+  }
+
+  &__desc{
+    @include span-columns(4);
+  }
+
+  @include media($medium-screen-up){
+    &__icon{
+      @include span-columns(1);
+      @include shift(0);
+    }
+
+    &__desc{
+      @include span-columns(3);
+    }
+  }
+}
