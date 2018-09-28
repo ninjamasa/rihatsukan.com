@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <!-- ▼▼▼▼▼▼▼▼▼▼front-page.php ▼▼▼▼▼▼▼▼▼▼▼-->
+<!-- comment-->
 
 <?php //showCardContent('cards/basic-info') あとで積極的に使っていこう?>
 
