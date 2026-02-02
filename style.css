@@ -2201,7 +2201,7 @@ picture {
   display: inline-block;
   margin-top: 1.5em;
   padding: 0.75em 2em;
-  background: transparent;
+  background: #c0392b;
   color: #000;
   border: 2px solid #000;
   border-radius: 4px;
@@ -2211,6 +2211,6 @@ picture {
 }
 
 .topBanner__button:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: #a93226;
   color: #000;
 }
