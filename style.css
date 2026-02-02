@@ -1155,6 +1155,7 @@ picture {
   margin-right: 0;
 }
 
+
 @media screen and (min-width: 600px) {
   .cardsContainer__vertical--side {
     float: left;
@@ -2126,4 +2127,63 @@ picture {
   border-top: solid 1px #ddd;
   padding-top: 0.75em;
   text-align: right;
+}
+
+/* topBanner */
+.topBanner {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.topBanner__inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.75em;
+}
+
+.topBanner__heading {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 600px) {
+  .topBanner__heading {
+    font-size: 1.8em;
+  }
+}
+
+.topBanner__items {
+  display: flex;
+  justify-content: center;
+  gap: 0.75em;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+  .topBanner__items {
+    flex-wrap: nowrap;
+  }
+}
+
+.topBanner__item {
+  display: block;
+  flex: 1 1 auto;
+  max-width: 320px;
+  transition: transform 0.2s ease;
+}
+
+.topBanner__item:hover {
+  transform: scale(1.03);
+}
+
+.topBanner__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
