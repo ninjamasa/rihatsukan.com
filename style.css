@@ -2175,9 +2175,15 @@ picture {
 
 .topBanner__item {
   display: block;
-  flex: 1 1 auto;
+  flex: 0 1 calc(50% - 0.75em);
   max-width: 320px;
   transition: transform 0.2s ease;
+}
+
+@media screen and (min-width: 600px) {
+  .topBanner__item {
+    flex: 1 1 auto;
+  }
 }
 
 .topBanner__item:hover {
@@ -2195,9 +2201,9 @@ picture {
   display: inline-block;
   margin-top: 1.5em;
   padding: 0.75em 2em;
-  background: #c0392b;
-  color: #fff;
-  border: none;
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
   border-radius: 4px;
   font-size: 1.6rem;
   text-decoration: none;
@@ -2205,6 +2211,6 @@ picture {
 }
 
 .topBanner__button:hover {
-  background: #a93226;
-  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
 }
