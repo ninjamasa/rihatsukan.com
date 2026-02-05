@@ -2145,7 +2145,7 @@ picture {
 
 .topBanner__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1em;
   margin-bottom: 1.5em;
@@ -2158,7 +2158,7 @@ picture {
   font-weight: bold;
   margin-bottom: 0;
   line-height: 1.5;
-  text-align: left;
+  text-align: center;
   -webkit-text-stroke: 1px #000;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
@@ -2180,7 +2180,6 @@ picture {
 .topBanner__item {
   display: block;
   flex: 1 1 0;
-  max-width: 320px;
   transition: transform 0.2s ease;
 }
 
