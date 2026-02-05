@@ -26,7 +26,7 @@
     ?> </title>
 
 
-  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>#20250205">
 
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/slick-theme.css">
