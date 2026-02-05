@@ -9,7 +9,10 @@
     <div class="cardsContainer tokushoku__container">
       <div class="topBanner">
         <div class="topBanner__inner">
-          <h2 class="topBanner__heading">究極の若返りメニュー<br>リバースエイジング誕生!</h2>
+          <div class="topBanner__header">
+            <h2 class="topBanner__heading">究極の若返りメニュー<br>リバースエイジング誕生!</h2>
+            <a href="#" class="topBanner__button">詳しくはこちら &gt;</a>
+          </div>
           <div class="topBanner__items">
             <a href="#" class="topBanner__item">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_01_menseste.png" alt="メンズエステコース">
@@ -21,7 +24,6 @@
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_03_hatsumo.png" alt="発毛ケアコース">
             </a>
           </div>
-          <a href="#" class="topBanner__button">詳しくはこちら &gt;</a>
         </div>
       </div>
 
