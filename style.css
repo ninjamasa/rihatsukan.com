@@ -2159,8 +2159,8 @@ picture {
   margin-bottom: 0;
   line-height: 1.5;
   text-align: center;
-  -webkit-text-stroke: 1px #000;
-  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  -webkit-text-stroke: 1px #91823F;
+  text-shadow: 1px 1px 0 #91823F, -1px -1px 0 #91823F, 1px -1px 0 #91823F, -1px 1px 0 #91823F;
 }
 
 @media screen and (min-width: 600px) {
@@ -2198,9 +2198,9 @@ picture {
 .topBanner__button {
   display: inline-block;
   padding: 0.75em 2em;
-  background: #ff444c;
-  color: #000;
-  border: 2px solid #000;
+  background: #91823F;
+  color: #fff;
+  border: none;
   border-radius: 4px;
   font-size: 1.6rem;
   text-decoration: none;
@@ -2208,6 +2208,6 @@ picture {
 }
 
 .topBanner__button:hover {
-  background: #a93226;
-  color: #000;
+  background: #7a6e35;
+  color: #fff;
 }
