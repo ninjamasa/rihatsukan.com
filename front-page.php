@@ -11,17 +11,17 @@
         <div class="topBanner__inner">
           <div class="topBanner__header">
             <h2 class="topBanner__heading">究極の若返りメニュー<br>リバースエイジング誕生!</h2>
-            <a href="#" class="topBanner__button">詳しくはこちら &gt;</a>
+            <a href="https://rihatsukan.reverseaging.site" class="topBanner__button">詳しくはこちら &gt;</a>
           </div>
           <div class="topBanner__items">
-            <a href="#" class="topBanner__item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_01_menseste.png" alt="メンズエステコース">
+            <a href="https://rihatsukan.reverseaging.site/course/mens.html" class="topBanner__item">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_01_mens.png" alt="メンズエステコース">
             </a>
-            <a href="#" class="topBanner__item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_02_bihada.png" alt="美肌コース">
+            <a href="https://rihatsukan.reverseaging.site/course/aging.html" class="topBanner__item">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_02_aging.png" alt="美肌コース">
             </a>
-            <a href="#" class="topBanner__item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_03_hatsumo.png" alt="発毛ケアコース">
+            <a href="https://rihatsukan.reverseaging.site/course/growth.html" class="topBanner__item">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/top_banner_03_growth.png" alt="発毛ケアコース">
             </a>
           </div>
         </div>
